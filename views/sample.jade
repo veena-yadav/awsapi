@@ -1,0 +1,16 @@
+doctype html 
+html 
+    head 
+        title  Jade Page 
+    body 
+        h1 Hello user 
+        p welcome to my page
+        //- ul 
+        //-     - for(var i=0;i<10;i++){
+        //-         li welcome
+        //-     - }
+        - var items =["coffee","tea","cold coffee"]
+        ul  
+            - for item in items
+                    li #{item}
+        img(src="./apple.png")
